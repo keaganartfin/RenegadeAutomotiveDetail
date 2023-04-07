@@ -1,0 +1,43 @@
+/* app.component.css */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+form {
+    display: inline-block;
+    background-color: white;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+mat-form-field {
+    margin-right: 1rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Increase the size of the date picker icon */
+.mat-datepicker-toggle .mat-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.submission-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #4caf50; // Change the color as needed
+}

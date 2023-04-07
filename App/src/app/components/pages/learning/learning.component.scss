@@ -1,0 +1,78 @@
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 474). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+/* Base styles */
+
+:root {
+  font-size: 10px;
+  --grey-text: #828282;
+  --black-text: #111;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 138rem;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+/* Masthead */
+
+
+

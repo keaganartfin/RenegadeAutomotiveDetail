@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-renegade-dev-123204-authRole",
+      "UnauthRoleArn": "arn:aws:iam::055275145274:role/amplify-renegade-dev-123204-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::055275145274:role/amplify-renegade-dev-123204-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-renegade-dev-123204-deployment",
+      "UnauthRoleName": "amplify-renegade-dev-123204-unauthRole",
+      "StackName": "amplify-renegade-dev-123204",
+      "StackId": "arn:aws:cloudformation:us-east-2:055275145274:stack/amplify-renegade-dev-123204/b7085c90-abcc-11ed-b9bb-02a4b2d59540",
+      "AmplifyAppId": "d8sthcixta7is"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d8sthcixta7is",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
