@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, UntypedFormArray, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -8,11 +8,11 @@ import { HttpClient } from '@angular/common/http';
     styleUrls: ['./booking.component.scss'],
 })
 export class BookingComponent {
-    bookingForm: FormGroup;
+    bookingForm: UntypedFormGroup;
     submissionMessage: string | null = null;
 
     constructor(
-        private formBuilder: FormBuilder,
+        private formBuilder: UntypedFormBuilder,
         private httpClient: HttpClient
     ) {
         this.bookingForm = this.formBuilder.group({
@@ -25,7 +25,7 @@ export class BookingComponent {
         });
     }
 
-    createVehicleFormGroup(): FormGroup {
+    createVehicleFormGroup(): UntypedFormGroup {
         return this.formBuilder.group({
             year: ['', Validators.required],
             make: ['', Validators.required],
@@ -42,8 +42,8 @@ export class BookingComponent {
         this.vehicles.removeAt(index);
     }
 
-    get vehicles(): FormArray {
-        return this.bookingForm.get('vehicles') as FormArray;
+    get vehicles(): UntypedFormArray {
+        return this.bookingForm.get('vehicles') as UntypedFormArray;
     }
 
     onSubmit(): void {
